@@ -10,4 +10,5 @@ RUN apt-get update -qy && \
 
 RUN apt-get autoremove -yq
 
-RUN go get golang.org/x/tools/cmd/vet
+RUN go get golang.org/x/tools/cmd/vet && \
+    go get golang.org/x/tools/cmd/cover
