@@ -9,3 +9,5 @@ RUN apt-get update -qy && \
     rsync
 
 RUN apt-get autoremove -yq
+
+RUN go get golang.org/x/tools/cmd/vet
